@@ -1,0 +1,115 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+#body-header{
+    height: 400px;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+  }
+body {
+    background-image: url("https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.col h3,p{
+  color: rgb(0, 0, 0);
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: rgb(5, 4, 4);
+    text-decoration: none;
+}
+.horizontal-list{
+  /* list-style: none; */
+  padding-left: 0px;
+  margin: 0px;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.horizontal-list li{
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+}
+
+.horizontal-list li a{
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+}
+
+.nav-menu li a{
+  transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+  color: rgb(114, 95, 95);
+  border-bottom: 1px solid white;
+}
+.dimension {
+  width: 500px;
+  height: 800px;
+}
+
+.nav-tabs{
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #26102e94;
+  color: rgb(0, 0, 0);
+  border: 3px solid #9400d3;
+}
+.rounded{
+  height: 800px;
+}
+.nav-tabs .nav-link {
+  background-color: rgb(34, 12, 33);
+  color: #040305fd;
+  border: 3px solid #9400d3;
+  margin-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.nav-tabs .nav-link:hover {
+  border: 3px solid #886697a8;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #9400d3;
+}
+
+.tab-content {
+  background-color: rgba(226, 218, 218, 0.226);
+  height: 900px;
+  border: 1px solid #9400d3;
+  padding: 20px;
+}
+
+
+.upcoming {
+  background-color: #ffffff;
+  height: 100px;
+}

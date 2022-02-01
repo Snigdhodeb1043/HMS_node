@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="css/styles2.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Sign up</div>
+    <div class="content">
+      <form action="/sign_up" method="POST">
+        <div class="social-icons">
+            <a href="https://accounts.google.com/servicelogin"><img src="images\gp.png" alt=""></a>
+            <a href="https://www.facebook.com/"><img src="images\fb.png" alt=""></a>
+            <a href="https://twitter.com/login?lang=en"><img src="images\tw.png" alt=""></a>  
+          </div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" name="username" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input id="email" type="text" name="email" placeholder="Enter your email" onkeydown="validateEmail()" required>
+            <span id="text"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="phone" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" name="confirmPassword" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript">
+  function ValidateEmail() 
+{
+    var mail = document.getElementById("email").value;
+    var text = document.getElementById("text");
+    var pattern =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/;
+ if (mail.match(pattern))
+  {
+    text.innerHTML("Your email address is valid");
+    text.style.color = green;
+  }else{
+    text.innerHTML("Please enter correct email address!!");
+    text.style.color = #ff0000;
+  }
+}
+</script>
+</body>
+</html>

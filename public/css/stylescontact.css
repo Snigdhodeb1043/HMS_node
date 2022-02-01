@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form input,textarea {
+    line-height: 1.6rem;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: #44421e;
+    font-weight: bold;
+}
+::placeholder:hover {
+    color: #706f5cc4;
+    font-weight: bold;
+}
+
+html,
+body {
+    background: url(https://images.pexels.com/photos/6415/apple-desk-office-working.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+}
+
+.form-container {
+    position: relative;
+    left: 20%;
+    width: 60%;
+    height: 500px;
+    max-height: 600px;
+    background-color: #c9c0c041;
+}
+
+.contact-form {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 500px;
+    
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.submit {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.submit:hover{
+    opacity: 0.5;
+}
