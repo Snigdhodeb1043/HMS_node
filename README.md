@@ -6,3 +6,5 @@ This is basically a hotel Management software developed by my college mates as o
 
 ### Image1
 
+Will update it soon
+
